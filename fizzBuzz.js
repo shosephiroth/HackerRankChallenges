@@ -30,6 +30,19 @@ function readLine() {
 
 function fizzBuzz(n) {
     // Write your code here
+    // for loop to count from 1 to n (upper limits of test)
+    for (let i = 0; i < n; i++) {
+        // if and else if blocks to guide action/results
+        if (i % 3 === 0 && i % 5 ===0) {
+            console.log("FizzBuzz")
+        } else if (i % 3 === 0) {
+            console.log("Fizz")
+        } else if (i % 5 === 0) {
+            console.log("Buzz")
+        } else {
+            console.log(i);
+        }
+    }
 
 }
 
