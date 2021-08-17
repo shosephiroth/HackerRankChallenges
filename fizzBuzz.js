@@ -31,7 +31,7 @@ function readLine() {
 function fizzBuzz(n) {
     // Write your code here
     // for loop to count from 1 to n (upper limits of test)
-    for (let i = 1; i < n; i++) {
+    for (let i = 1; i <= n; i++) {
         // if and else if blocks to guide action/results
         if (i % 3 === 0 && i % 5 ===0) {
             console.log("FizzBuzz")
@@ -47,3 +47,7 @@ function fizzBuzz(n) {
 }
 
 function main() {
+    const n = parseInt(readLine().trim(), 10);
+
+    fizzBuzz(n);
+}
